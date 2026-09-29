@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background-color: lightgray;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#logo {
+    width: 10%;
+    height: 10%;
+    margin: 10px;
+}
+
+header {
+    background-color: indigo;
+    color: white;
+    padding-bottom: 20px;
+}
+
+#title {
+    display: inline;
+    font-size: 40px;
+}
+
+#links li {
+    display: inline;
+    padding: 15px;
+    border-right: 2px solid white;
+}
+
+#links li:hover {
+    background-color: white;
+}
+
+#links a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    background-color: turquoise;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+section {
+    padding: 20px;
+}
+
+table, th, td, caption {
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+caption {
+    font-size: 20px;
+    background-color: darkolivegreen;
+    color: white;
+}
+td {
+    text-align: center;
+}
+
+.facultyImg {
+    width: 100px;
+    height: 100px;
+    border: 1px solid purple;
+    border-radius: 20px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+dd {
+    padding-bottom: 20px;
+}
