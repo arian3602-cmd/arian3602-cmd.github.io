@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function calculateTax()
+            {
+                var purchase = document.getElementById("purchase").value;
+                var taxRate = 0.0825;
+
+                var tax = purchase * taxRate;
+                var total = Number(purchase) + tax;
+
+                document.getElementById("tax").value = tax.toFixed(2);
+                document.getElementById("total").value = total.toFixed(2);
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <h2>Purchase Tax Calculator</h2>
+
+        <form>
+            <label for="purchase">Purchase Amount:</label><br>
+            <input type="text" id="purchase" name="purchase"><br><br>
+
+            <label for="tax">Tax Amount:</label><br>
+            <input type="text" id="tax" name="tax" disabled><br><br>
+
+            <label for="total">Total:</label><br>
+            <input type="text" id="total" name="total" disabled><br><br>
+
+            <input type="button" value="Calculate" onclick="calculateTax()">
+        </form>
+
+    </body>
+</html>
