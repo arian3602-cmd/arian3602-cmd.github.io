@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My 10 Favorite Items</title>
+    </head>
+
+    <body>
+
+        <h1>My 10 Favorite Items</h1>
+
+        <p>Here is a list of my 10 favorite items.</p>
+
+        <ol id="favoriteItems"></ol>
+
+        <script>
+
+            // Array of my 10 favorite items
+            let items = [
+                "Keyboard",
+                "Shoes",
+                "Car Keys",
+                "Phone",
+                "Tablet",
+                "Computer",
+                "Laptop",
+                "Basketball",
+                "Earphones",
+                "Gym"
+            ];
+
+            // Loop to display each item
+            for (let i = 0; i < items.length; i++) {
+                document.getElementById("favoriteItems").innerHTML +=
+                    "<li>" + items[i] + "</li>";
+            }
+
+        </script>
+
+    </body>
+</html>
