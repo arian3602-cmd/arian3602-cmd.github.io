@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="code.js"></script>
+    </head>
+    <body>
+        <div id="sample"></div><br>
+
+        <label for="red">Red: </label>
+        <input type="range" name="red" id="red" min="0" max="255" value="0" onchange="colorMixer()"><br>
+
+        <label for="green">Green: </label>
+        <input type="range" name="green" id="green" min="0" max="255" value="0" onchange="colorMixer()"><br>
+
+        <label for="blue">Blue: </label>
+        <input type="range" name="blue" id="blue" min="0" max="255" value="0" onchange="colorMixer()"><br>
+
+        <span id="color-output"></span>
+
+    </body>
+</html>
