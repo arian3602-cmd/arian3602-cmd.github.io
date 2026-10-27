@@ -1,0 +1,32 @@
+span {
+    color: red;
+    font-weight: bold;
+}
+
+#output {
+    color: blue;
+}
+
+
+#cheese {
+    position: absolute;
+    z-index: 0;
+}
+
+#pepperoni-topping {
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#sausage-topping {
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+
+#mushrooms-topping {
+    position: absolute;
+    z-index: 3;
+    display: none;
+}

@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Form Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="code.js"></script>
+        
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Form Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="code.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address: <span id="email-error"></span></label>
+                    <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="confirm">Confirm Email: <span id="confirm-error"></span></label>
+                    <input type="email" class="form-control" placeholder="Confirm email" id="confirm" name="confirm">
+                </div>
+
+                <input type="button" value="Confirm Email" onclick="checkEmail()">
+            </form>
+
+            <!--PIZZA FORM-->
+            <h1>Pizza Hut Order Form</h1>
+            <form>
+                <div class="form-check">
+                    <label class="form-check-label" for="small">
+                        <input type="radio" class="form-check-input" id="small" name="sizing" value="Small" checked>Small
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label" for="medium">
+                        <input type="radio" class="form-check-input" id="medium" name="sizing" value="Medium">Medium
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label" for="small">
+                        <input type="radio" class="form-check-input" id="small" name="sizing" value="Large" checked>Large
+                    </label>
+                </div>
+            
+                <hr>
+                <!--toppings-->
+                <div class="form-check">
+                    <label class="form-check-label" for="pepperoni">
+                        <input type="checkbox" class="form-check-input" id="pepperoni" name="pepperoni" value="Pepperoni">Pepperoni
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label" for="sausage">
+                        <input type="checkbox" class="form-check-input" id="sausage" name="sausage" value="Sausage">Sausage
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label" for="mushrooms">
+                        <input type="checkbox" class="form-check-input" id="mushrooms" name="mushrooms" value="Mushrooms">Mushrooms
+                    </label>
+                </div>
+                <hr>
+                <input type="button" value="Process Order" onclick="pizzaOrder()">
+                <hr>
+                <div id="output"></div>
+            </form>
+            <img id="cheese" src="images/cheese.png">
+            <img id="pepperoni-topping" src="images/pepperoni.png">
+            <img id="sausage-topping" src="images/sausage.png">
+            <img id="mushrooms-topping" src="images/mushrooms.png">
+        </div>
+    
+    <script>
+        document.getElementById("pepperoni").onclick = function() {
+            if (this.checked == true)
+            {
+                document.getElementById("pepperoni-topping").style = "display:block;";
+            }
+            else
+            {
+                document.getElementById("pepperoni-topping").style = "display:none;";
+            }
+        }
+
+        document.getElementById("sausage").onclick = function() {
+            if (this.checked == true)
+            {
+                document.getElementById("sausage-topping").style = "display:block;";
+            }
+            else
+            {
+                document.getElementById("sausage-topping").style = "display:none;";
+            }
+        }
+
+        document.getElementById("mushrooms").onclick = function() {
+            if (this.checked == true)
+            {
+                document.getElementById("mushrooms-topping").style = "display:block;";
+            }
+            else
+            {
+                document.getElementById("mushrooms-topping").style = "display:none;";
+            }
+        }
+        </script>
+    </body>
+</html>
