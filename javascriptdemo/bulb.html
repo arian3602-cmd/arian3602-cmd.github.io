@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <span><a href="index.html">Home</a> | <a href="bulb.html">Bulb</a> | <a href="form.html">Form</a></span><br>
+
+        <!--inline JavaScript and Event Handlers-->
+        <img id="bulb" src="#" onclick="this.src='images/pic_bulbon.gif'" onmouseout="this.src='images/pic_bulboff.gif'">
+
+
+        <script>
+            //set the source for the image tag
+            document.getElementById("bulb").src = "images/pic_bulboff.gif";
+        </script>
+    </body>
+</html>
